@@ -7,6 +7,10 @@ This task implements a reliable button-controlled LED toggle on an STM32 Nucleo 
 - **Onboard User LED (LD2)**: `GPIOA`, `GPIO_PIN_5` (Push-Pull Output)
 - **Onboard User Button (B1)**: `GPIOC`, `GPIO_PIN_13` (Input with internal Pull-Up, Active LOW)
 
+## Video Demo
+The video demonstration showing hardware behavior and single-press LED toggling is included in this directory:
+- [Task 1 Video Demo](task1_demo.mp4)
+
 ## Key Features & Constraints
 1. **Strict API Usage**:
    - `HAL_GPIO_ReadPin()` to read the button state.
@@ -15,7 +19,7 @@ This task implements a reliable button-controlled LED toggle on an STM32 Nucleo 
    - No direct register writes (e.g. `GPIOA->ODR` or `GPIOC->IDR`).
 
 2. **Software Debouncing & State Persistence**:
-   - Uses a non-blocking 50ms software debounce algorithm using `HAL_GetTick()`.
+   - Uses a non-blocking 50ms software debounce algorithm using `millis()` / `HAL_GetTick()`.
    - Detects the falling edge (button press) to toggle the LED state exactly once per press.
    - LED state persists after button release.
 
