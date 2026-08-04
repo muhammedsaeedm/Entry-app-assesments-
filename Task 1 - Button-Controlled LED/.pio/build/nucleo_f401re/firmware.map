@@ -4439,7 +4439,7 @@ Linker script and memory map
                 0x08000000                g_pfnVectors
                 0x08000194                        . = ALIGN (0x4)
 
-.text           0x08000194     0x1fc4
+.text           0x08000194     0x2018
                 0x08000194                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000194       0x30 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
@@ -4733,257 +4733,257 @@ Linker script and memory map
                 0x080017c4                _kill
  .text._getpid  0x080017d4        0x4 .pio/build/nucleo_f401re/SrcWrapper/src/syscalls.c.o
                 0x080017d4                _getpid
- .text.setup    0x080017d8       0x7c .pio/build/nucleo_f401re/src/main.cpp.o
+ .text.setup    0x080017d8       0xa4 .pio/build/nucleo_f401re/src/main.cpp.o
                 0x080017d8                setup
- .text.loop     0x08001854       0x58 .pio/build/nucleo_f401re/src/main.cpp.o
-                0x08001854                loop
+ .text.loop     0x0800187c       0x84 .pio/build/nucleo_f401re/src/main.cpp.o
+                0x0800187c                loop
  .text.startup._Z7premainv
-                0x080018ac       0x10 .pio/build/nucleo_f401re/libFrameworkArduino.a(main.cpp.o)
-                0x080018ac                premain()
+                0x08001900       0x10 .pio/build/nucleo_f401re/libFrameworkArduino.a(main.cpp.o)
+                0x08001900                premain()
  .text.startup.main
-                0x080018bc       0x14 .pio/build/nucleo_f401re/libFrameworkArduino.a(main.cpp.o)
-                0x080018bc                main
+                0x08001910       0x14 .pio/build/nucleo_f401re/libFrameworkArduino.a(main.cpp.o)
+                0x08001910                main
  .text.Reset_Handler
-                0x080018d0       0x50 .pio/build/nucleo_f401re/libFrameworkArduino.a(startup_stm32yyxx.S.o)
-                0x080018d0                Reset_Handler
+                0x08001924       0x50 .pio/build/nucleo_f401re/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+                0x08001924                Reset_Handler
  .text.Default_Handler
-                0x08001920        0x2 .pio/build/nucleo_f401re/libFrameworkArduino.a(startup_stm32yyxx.S.o)
-                0x08001920                RTC_Alarm_IRQHandler
-                0x08001920                DebugMon_Handler
-                0x08001920                SPI4_IRQHandler
-                0x08001920                DMA2_Stream5_IRQHandler
-                0x08001920                HardFault_Handler
-                0x08001920                DMA1_Stream5_IRQHandler
-                0x08001920                PVD_IRQHandler
-                0x08001920                SDIO_IRQHandler
-                0x08001920                TAMP_STAMP_IRQHandler
-                0x08001920                PendSV_Handler
-                0x08001920                NMI_Handler
-                0x08001920                I2C3_ER_IRQHandler
-                0x08001920                I2C2_EV_IRQHandler
-                0x08001920                DMA1_Stream2_IRQHandler
-                0x08001920                FPU_IRQHandler
-                0x08001920                UsageFault_Handler
-                0x08001920                DMA2_Stream2_IRQHandler
-                0x08001920                SPI1_IRQHandler
-                0x08001920                DMA2_Stream3_IRQHandler
-                0x08001920                DMA2_Stream0_IRQHandler
-                0x08001920                I2C1_EV_IRQHandler
-                0x08001920                DMA1_Stream6_IRQHandler
-                0x08001920                DMA1_Stream1_IRQHandler
-                0x08001920                RCC_IRQHandler
-                0x08001920                Default_Handler
-                0x08001920                ADC_IRQHandler
-                0x08001920                DMA1_Stream7_IRQHandler
-                0x08001920                DMA2_Stream7_IRQHandler
-                0x08001920                I2C3_EV_IRQHandler
-                0x08001920                RTC_WKUP_IRQHandler
-                0x08001920                SPI2_IRQHandler
-                0x08001920                MemManage_Handler
-                0x08001920                DMA1_Stream0_IRQHandler
-                0x08001920                SVC_Handler
-                0x08001920                WWDG_IRQHandler
-                0x08001920                OTG_FS_WKUP_IRQHandler
-                0x08001920                I2C2_ER_IRQHandler
-                0x08001920                DMA2_Stream1_IRQHandler
-                0x08001920                FLASH_IRQHandler
-                0x08001920                DMA2_Stream4_IRQHandler
-                0x08001920                BusFault_Handler
-                0x08001920                OTG_FS_IRQHandler
-                0x08001920                SPI3_IRQHandler
-                0x08001920                DMA1_Stream4_IRQHandler
-                0x08001920                I2C1_ER_IRQHandler
-                0x08001920                DMA2_Stream6_IRQHandler
-                0x08001920                DMA1_Stream3_IRQHandler
- .text.millis   0x08001922        0x4 .pio/build/nucleo_f401re/libFrameworkArduino.a(wiring_time.c.o)
-                0x08001922                millis
- *fill*         0x08001926        0x2 
+                0x08001974        0x2 .pio/build/nucleo_f401re/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+                0x08001974                RTC_Alarm_IRQHandler
+                0x08001974                DebugMon_Handler
+                0x08001974                SPI4_IRQHandler
+                0x08001974                DMA2_Stream5_IRQHandler
+                0x08001974                HardFault_Handler
+                0x08001974                DMA1_Stream5_IRQHandler
+                0x08001974                PVD_IRQHandler
+                0x08001974                SDIO_IRQHandler
+                0x08001974                TAMP_STAMP_IRQHandler
+                0x08001974                PendSV_Handler
+                0x08001974                NMI_Handler
+                0x08001974                I2C3_ER_IRQHandler
+                0x08001974                I2C2_EV_IRQHandler
+                0x08001974                DMA1_Stream2_IRQHandler
+                0x08001974                FPU_IRQHandler
+                0x08001974                UsageFault_Handler
+                0x08001974                DMA2_Stream2_IRQHandler
+                0x08001974                SPI1_IRQHandler
+                0x08001974                DMA2_Stream3_IRQHandler
+                0x08001974                DMA2_Stream0_IRQHandler
+                0x08001974                I2C1_EV_IRQHandler
+                0x08001974                DMA1_Stream6_IRQHandler
+                0x08001974                DMA1_Stream1_IRQHandler
+                0x08001974                RCC_IRQHandler
+                0x08001974                Default_Handler
+                0x08001974                ADC_IRQHandler
+                0x08001974                DMA1_Stream7_IRQHandler
+                0x08001974                DMA2_Stream7_IRQHandler
+                0x08001974                I2C3_EV_IRQHandler
+                0x08001974                RTC_WKUP_IRQHandler
+                0x08001974                SPI2_IRQHandler
+                0x08001974                MemManage_Handler
+                0x08001974                DMA1_Stream0_IRQHandler
+                0x08001974                SVC_Handler
+                0x08001974                WWDG_IRQHandler
+                0x08001974                OTG_FS_WKUP_IRQHandler
+                0x08001974                I2C2_ER_IRQHandler
+                0x08001974                DMA2_Stream1_IRQHandler
+                0x08001974                FLASH_IRQHandler
+                0x08001974                DMA2_Stream4_IRQHandler
+                0x08001974                BusFault_Handler
+                0x08001974                OTG_FS_IRQHandler
+                0x08001974                SPI3_IRQHandler
+                0x08001974                DMA1_Stream4_IRQHandler
+                0x08001974                I2C1_ER_IRQHandler
+                0x08001974                DMA2_Stream6_IRQHandler
+                0x08001974                DMA1_Stream3_IRQHandler
+ .text.millis   0x08001976        0x4 .pio/build/nucleo_f401re/libFrameworkArduino.a(wiring_time.c.o)
+                0x08001976                millis
+ *fill*         0x0800197a        0x2 
  .text._Z14serialEventRunv
-                0x08001928       0x1c .pio/build/nucleo_f401re/libFrameworkArduino.a(WSerial.cpp.o)
-                0x08001928                serialEventRun()
- .text.init     0x08001944        0x4 .pio/build/nucleo_f401re/libFrameworkArduino.a(board.c.o)
-                0x08001944                init
+                0x0800197c       0x1c .pio/build/nucleo_f401re/libFrameworkArduino.a(WSerial.cpp.o)
+                0x0800197c                serialEventRun()
+ .text.init     0x08001998        0x4 .pio/build/nucleo_f401re/libFrameworkArduino.a(board.c.o)
+                0x08001998                init
  .text._ZN14HardwareSerial9availableEv
-                0x08001948       0x10 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001948                HardwareSerial::available()
+                0x0800199c       0x10 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x0800199c                HardwareSerial::available()
  .text._ZN14HardwareSerial4peekEv
-                0x08001958       0x1a .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001958                HardwareSerial::peek()
+                0x080019ac       0x1a .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080019ac                HardwareSerial::peek()
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x08001972       0x1c .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001972                HardwareSerial::availableForWrite()
+                0x080019c6       0x1c .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080019c6                HardwareSerial::availableForWrite()
  .text._ZN14HardwareSerial5writeEh
-                0x0800198e       0x18 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x0800198e                HardwareSerial::write(unsigned char)
- *fill*         0x080019a6        0x2 
+                0x080019e2       0x18 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080019e2                HardwareSerial::write(unsigned char)
+ *fill*         0x080019fa        0x2 
  .text._ZN14HardwareSerial16_tx_complete_irqEP8serial_s
-                0x080019a8       0x60 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080019a8                HardwareSerial::_tx_complete_irq(serial_s*)
+                0x080019fc       0x60 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080019fc                HardwareSerial::_tx_complete_irq(serial_s*)
  .text._ZN14HardwareSerial5writeEPKhj
-                0x08001a08       0xe4 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001a08                HardwareSerial::write(unsigned char const*, unsigned int)
+                0x08001a5c       0xe4 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001a5c                HardwareSerial::write(unsigned char const*, unsigned int)
  .text._ZN14HardwareSerial4initE7PinNameS0_S0_S0_
-                0x08001aec       0x32 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001aec                HardwareSerial::init(PinName, PinName, PinName, PinName)
+                0x08001b40       0x32 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001b40                HardwareSerial::init(PinName, PinName, PinName, PinName)
  .text._ZN14HardwareSerial5flushEm
-                0x08001b1e       0x36 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001b1e                HardwareSerial::flush(unsigned long)
+                0x08001b72       0x36 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001b72                HardwareSerial::flush(unsigned long)
  .text._ZN14HardwareSerial5flushEv
-                0x08001b54        0x6 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001b54                HardwareSerial::flush()
- *fill*         0x08001b5a        0x2 
+                0x08001ba8        0x6 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001ba8                HardwareSerial::flush()
+ *fill*         0x08001bae        0x2 
  .text._ZN14HardwareSerial5setRxEm
-                0x08001b5c       0x48 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001b5c                HardwareSerial::setRx(unsigned long)
+                0x08001bb0       0x48 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001bb0                HardwareSerial::setRx(unsigned long)
  .text._ZN14HardwareSerial5setTxEm
-                0x08001ba4       0x48 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001ba4                HardwareSerial::setTx(unsigned long)
+                0x08001bf8       0x48 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001bf8                HardwareSerial::setTx(unsigned long)
  .text._ZN14HardwareSerialC2EPv16HalfDuplexMode_t
-                0x08001bec       0x9c .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001bec                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
-                0x08001bec                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x08001c40       0x9c .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001c40                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x08001c40                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
  .text._ZN14HardwareSerial18enableHalfDuplexRxEv
-                0x08001c88       0x2c .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001c88                HardwareSerial::enableHalfDuplexRx()
+                0x08001cdc       0x2c .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001cdc                HardwareSerial::enableHalfDuplexRx()
  .text._ZN14HardwareSerial4readEv
-                0x08001cb4       0x2e .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001cb4                HardwareSerial::read()
- *fill*         0x08001ce2        0x2 
+                0x08001d08       0x2e .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001d08                HardwareSerial::read()
+ *fill*         0x08001d36        0x2 
  .text.startup._GLOBAL__sub_I_Serial2
-                0x08001ce4       0x14 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08001d38       0x14 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .text._ZN6Stream9timedReadEv
-                0x08001cf8       0x2a .pio/build/nucleo_f401re/libFrameworkArduino.a(Stream.cpp.o)
-                0x08001cf8                Stream::timedRead()
+                0x08001d4c       0x2a .pio/build/nucleo_f401re/libFrameworkArduino.a(Stream.cpp.o)
+                0x08001d4c                Stream::timedRead()
  .text._ZN6Stream9readBytesEPcj
-                0x08001d22       0x22 .pio/build/nucleo_f401re/libFrameworkArduino.a(Stream.cpp.o)
-                0x08001d22                Stream::readBytes(char*, unsigned int)
+                0x08001d76       0x22 .pio/build/nucleo_f401re/libFrameworkArduino.a(Stream.cpp.o)
+                0x08001d76                Stream::readBytes(char*, unsigned int)
  .text._ZN6Stream14readBytesUntilEcPcj
-                0x08001d44       0x30 .pio/build/nucleo_f401re/libFrameworkArduino.a(Stream.cpp.o)
-                0x08001d44                Stream::readBytesUntil(char, char*, unsigned int)
+                0x08001d98       0x30 .pio/build/nucleo_f401re/libFrameworkArduino.a(Stream.cpp.o)
+                0x08001d98                Stream::readBytesUntil(char, char*, unsigned int)
  .text.__udivmoddi4
-                0x08001d74      0x2bc /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x08001d74                __udivmoddi4
+                0x08001dc8      0x2bc /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08001dc8                __udivmoddi4
  .text.unlikely._ZSt25__throw_bad_function_callv
-                0x08002030        0x6 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(functional.o)
-                0x08002030                std::__throw_bad_function_call()
- .text.abort    0x08002036        0xe /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-abort.o)
-                0x08002036                abort
- .text.memset   0x08002044       0x10 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
-                0x08002044                memset
+                0x08002084        0x6 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(functional.o)
+                0x08002084                std::__throw_bad_function_call()
+ .text.abort    0x0800208a        0xe /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-abort.o)
+                0x0800208a                abort
+ .text.memset   0x08002098       0x10 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+                0x08002098                memset
  .text._raise_r
-                0x08002054       0x50 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signal.o)
-                0x08002054                _raise_r
- .text.raise    0x080020a4       0x10 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signal.o)
-                0x080020a4                raise
- .text._kill_r  0x080020b4       0x24 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signalr.o)
-                0x080020b4                _kill_r
+                0x080020a8       0x50 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signal.o)
+                0x080020a8                _raise_r
+ .text.raise    0x080020f8       0x10 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signal.o)
+                0x080020f8                raise
+ .text._kill_r  0x08002108       0x24 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signalr.o)
+                0x08002108                _kill_r
  .text._getpid_r
-                0x080020d8        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signalr.o)
-                0x080020d8                _getpid_r
+                0x0800212c        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signalr.o)
+                0x0800212c                _getpid_r
  .text.__libc_init_array
-                0x080020dc       0x48 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-init.o)
-                0x080020dc                __libc_init_array
- .text.memcpy   0x08002124       0x1c /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memcpy-stub.o)
-                0x08002124                memcpy
+                0x08002130       0x48 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-init.o)
+                0x08002130                __libc_init_array
+ .text.memcpy   0x08002178       0x1c /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memcpy-stub.o)
+                0x08002178                memcpy
  *(.glue_7)
- .glue_7        0x08002140        0x0 linker stubs
+ .glue_7        0x08002194        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08002140        0x0 linker stubs
+ .glue_7t       0x08002194        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08002140        0x0 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08002194        0x0 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08002140        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08002140                _init
- .init          0x08002144        0x8 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08002194        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08002194                _init
+ .init          0x08002198        0x8 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x0800214c        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x0800214c                _fini
- .fini          0x08002150        0x8 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08002158                        . = ALIGN (0x4)
-                0x08002158                        _etext = .
+ .fini          0x080021a0        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x080021a0                _fini
+ .fini          0x080021a4        0x8 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x080021ac                        . = ALIGN (0x4)
+                0x080021ac                        _etext = .
 
-.vfp11_veneer   0x08002158        0x0
- .vfp11_veneer  0x08002158        0x0 linker stubs
+.vfp11_veneer   0x080021ac        0x0
+ .vfp11_veneer  0x080021ac        0x0 linker stubs
 
-.v4_bx          0x08002158        0x0
- .v4_bx         0x08002158        0x0 linker stubs
+.v4_bx          0x080021ac        0x0
+ .v4_bx         0x080021ac        0x0 linker stubs
 
-.iplt           0x08002158        0x0
- .iplt          0x08002158        0x0 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x080021ac        0x0
+ .iplt          0x080021ac        0x0 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08002158      0x1dc
-                0x08002158                        . = ALIGN (0x4)
+.rodata         0x080021ac      0x1dc
+                0x080021ac                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.PinMap_UART_RX
-                0x08002158       0x48 .pio/build/nucleo_f401re/FrameworkArduinoVariant/PeripheralPins.c.o
-                0x08002158                PinMap_UART_RX
+                0x080021ac       0x48 .pio/build/nucleo_f401re/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x080021ac                PinMap_UART_RX
  .rodata.PinMap_UART_TX
-                0x080021a0       0x48 .pio/build/nucleo_f401re/FrameworkArduinoVariant/PeripheralPins.c.o
-                0x080021a0                PinMap_UART_TX
+                0x080021f4       0x48 .pio/build/nucleo_f401re/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x080021f4                PinMap_UART_TX
  .rodata.analogInputPin
-                0x080021e8       0x40 .pio/build/nucleo_f401re/FrameworkArduinoVariant/variant_NUCLEO_F401RE.cpp.o
-                0x080021e8                analogInputPin
+                0x0800223c       0x40 .pio/build/nucleo_f401re/FrameworkArduinoVariant/variant_NUCLEO_F401RE.cpp.o
+                0x0800223c                analogInputPin
  .rodata.digitalPin
-                0x08002228       0xd0 .pio/build/nucleo_f401re/FrameworkArduinoVariant/variant_NUCLEO_F401RE.cpp.o
-                0x08002228                digitalPin
+                0x0800227c       0xd0 .pio/build/nucleo_f401re/FrameworkArduinoVariant/variant_NUCLEO_F401RE.cpp.o
+                0x0800227c                digitalPin
  .rodata.AHBPrescTable
-                0x080022f8       0x10 .pio/build/nucleo_f401re/SrcWrapper/src/stm32/system_stm32yyxx.c.o
-                0x080022f8                AHBPrescTable
+                0x0800234c       0x10 .pio/build/nucleo_f401re/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x0800234c                AHBPrescTable
  .rodata._ZTV14HardwareSerial
-                0x08002308       0x2c .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08002308                vtable for HardwareSerial
-                0x08002334                        . = ALIGN (0x4)
+                0x0800235c       0x2c .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x0800235c                vtable for HardwareSerial
+                0x08002388                        . = ALIGN (0x4)
 
-.ARM.extab      0x08002334        0x0
-                0x08002334                        . = ALIGN (0x4)
+.ARM.extab      0x08002388        0x0
+                0x08002388                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08002334                        . = ALIGN (0x4)
+                0x08002388                        . = ALIGN (0x4)
 
-.ARM            0x08002334        0x8
-                0x08002334                        . = ALIGN (0x4)
-                0x08002334                        __exidx_start = .
+.ARM            0x08002388        0x8
+                0x08002388                        . = ALIGN (0x4)
+                0x08002388                        __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.__udivmoddi4
-                0x08002334        0x8 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x0800233c                        __exidx_end = .
-                0x0800233c                        . = ALIGN (0x4)
+                0x08002388        0x8 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08002390                        __exidx_end = .
+                0x08002390                        . = ALIGN (0x4)
 
-.preinit_array  0x0800233c        0x0
-                0x0800233c                        . = ALIGN (0x4)
-                0x0800233c                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08002390        0x0
+                0x08002390                        . = ALIGN (0x4)
+                0x08002390                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800233c                        PROVIDE (__preinit_array_end = .)
-                0x0800233c                        . = ALIGN (0x4)
+                0x08002390                        PROVIDE (__preinit_array_end = .)
+                0x08002390                        . = ALIGN (0x4)
 
-.init_array     0x0800233c       0x10
-                0x0800233c                        . = ALIGN (0x4)
-                0x0800233c                        PROVIDE (__init_array_start = .)
+.init_array     0x08002390       0x10
+                0x08002390                        . = ALIGN (0x4)
+                0x08002390                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00101
-                0x0800233c        0x4 .pio/build/nucleo_f401re/libFrameworkArduino.a(main.cpp.o)
+                0x08002390        0x4 .pio/build/nucleo_f401re/libFrameworkArduino.a(main.cpp.o)
  *(.init_array*)
- .init_array    0x08002340        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .init_array    0x08002344        0x4 .pio/build/nucleo_f401re/SrcWrapper/src/stm32/interrupt.cpp.o
- .init_array    0x08002348        0x4 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x0800234c                        PROVIDE (__init_array_end = .)
-                0x0800234c                        . = ALIGN (0x4)
+ .init_array    0x08002394        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x08002398        0x4 .pio/build/nucleo_f401re/SrcWrapper/src/stm32/interrupt.cpp.o
+ .init_array    0x0800239c        0x4 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080023a0                        PROVIDE (__init_array_end = .)
+                0x080023a0                        . = ALIGN (0x4)
 
-.fini_array     0x0800234c        0x8
-                0x0800234c                        . = ALIGN (0x4)
-                0x0800234c                        PROVIDE (__fini_array_start = .)
+.fini_array     0x080023a0        0x8
+                0x080023a0                        . = ALIGN (0x4)
+                0x080023a0                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800234c        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .fini_array    0x08002350        0x4 .pio/build/nucleo_f401re/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08002354                        PROVIDE (__fini_array_end = .)
-                0x08002354                        . = ALIGN (0x4)
-                0x08002354                        _sidata = LOADADDR (.data)
+ .fini_array    0x080023a0        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x080023a4        0x4 .pio/build/nucleo_f401re/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x080023a8                        PROVIDE (__fini_array_end = .)
+                0x080023a8                        . = ALIGN (0x4)
+                0x080023a8                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08002354        0x0
- .rel.iplt      0x08002354        0x0 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x080023a8        0x0
+ .rel.iplt      0x080023a8        0x0 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0x68 load address 0x08002354
+.data           0x20000000       0x68 load address 0x080023a8
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -5016,11 +5016,11 @@ Linker script and memory map
                 0x20000068                        . = ALIGN (0x4)
                 0x20000068                        _edata = .
 
-.igot.plt       0x20000068        0x0 load address 0x080023bc
+.igot.plt       0x20000068        0x0 load address 0x08002410
  .igot.plt      0x20000068        0x0 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x20000068                        . = ALIGN (0x4)
 
-.bss            0x20000068      0x3e4 load address 0x080023bc
+.bss            0x20000068      0x3e8 load address 0x08002410
                 0x20000068                        _sbss = .
                 0x20000068                        __bss_start__ = _sbss
  *(.bss)
@@ -5038,18 +5038,20 @@ Linker script and memory map
                 0x200000a8      0x140 .pio/build/nucleo_f401re/SrcWrapper/src/stm32/interrupt.cpp.o
  .bss.uart_handlers
                 0x200001e8        0xc .pio/build/nucleo_f401re/SrcWrapper/src/stm32/uart.c.o
- .bss._ZZL25Task1_ButtonControlledLEDvE18last_debounce_time
+ .bss._ZZL21Task2_AlternatingLEDsvE15last_blink_time
                 0x200001f4        0x4 .pio/build/nucleo_f401re/src/main.cpp.o
- .bss.Serial2   0x200001f8      0x118 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x200001f8                Serial2
- .bss.__sf      0x20000310      0x138 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-findfp.o)
-                0x20000310                __sf
- .bss.errno     0x20000448        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-reent.o)
-                0x20000448                errno
+ .bss._ZZL25Task1_ButtonControlledLEDvE18last_debounce_time
+                0x200001f8        0x4 .pio/build/nucleo_f401re/src/main.cpp.o
+ .bss.Serial2   0x200001fc      0x118 .pio/build/nucleo_f401re/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x200001fc                Serial2
+ .bss.__sf      0x20000314      0x138 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-findfp.o)
+                0x20000314                __sf
+ .bss.errno     0x2000044c        0x4 /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-reent.o)
+                0x2000044c                errno
  *(COMMON)
-                0x2000044c                        . = ALIGN (0x4)
-                0x2000044c                        _ebss = .
-                0x2000044c                        __bss_end__ = _ebss
+                0x20000450                        . = ALIGN (0x4)
+                0x20000450                        _ebss = .
+                0x20000450                        __bss_end__ = _ebss
 LOAD /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
 LOAD /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 LOAD /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
@@ -5262,18 +5264,17 @@ END GROUP
 LOAD /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtend.o
 LOAD /home/saeee/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
 
-.noinit         0x2000044c        0x0
-                0x2000044c                        . = ALIGN (0x4)
-                0x2000044c                        _snoinit = .
+.noinit         0x20000450        0x0
+                0x20000450                        . = ALIGN (0x4)
+                0x20000450                        _snoinit = .
  *(.noinit)
  *(.noinit*)
-                0x2000044c                        . = ALIGN (0x4)
-                0x2000044c                        _enoinit = .
+                0x20000450                        . = ALIGN (0x4)
+                0x20000450                        _enoinit = .
 
 ._user_heap_stack
-                0x2000044c      0x604
+                0x20000450      0x600
                 0x20000450                        . = ALIGN (0x8)
- *fill*         0x2000044c        0x4 
                 [!provide]                        PROVIDE (end = .)
                 0x20000450                        PROVIDE (_end = .)
                 0x20000650                        . = (. + _Min_Heap_Size)

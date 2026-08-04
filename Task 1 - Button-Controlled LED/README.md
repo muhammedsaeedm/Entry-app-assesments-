@@ -1,28 +1,62 @@
-# Task 1: Button-Controlled LED (STM32 Nucleo Board)
+# Integrated Assessment Tasks: STM32 Nucleo-F401RE Board
 
-## Overview
-This task implements a reliable button-controlled LED toggle on an STM32 Nucleo board using **only GPIO driver APIs** (no direct register access).
+This project integrates **Task 1 (Button-Controlled Onboard LED)** and **Task 2 (Alternating External LED Blink)** using strictly **GPIO Driver APIs** (no direct register manipulation).
 
-## Hardware Configuration
-- **Onboard User LED (LD2)**: `GPIOA`, `GPIO_PIN_5` (Push-Pull Output)
-- **Onboard User Button (B1)**: `GPIOC`, `GPIO_PIN_13` (Input with internal Pull-Up, Active LOW)
+---
 
-## Video Demo
-The video demonstration showing hardware behavior and single-press LED toggling is included in this directory:
-- [Task 1 Video Demo](task1_demo.mp4)
+## 1. Pin Mappings
 
-## Key Features & Constraints
-1. **Strict API Usage**:
-   - `HAL_GPIO_ReadPin()` to read the button state.
-   - `HAL_GPIO_TogglePin()` / `HAL_GPIO_WritePin()` to control the LED state.
-   - `HAL_GPIO_Init()` to initialize GPIO pins.
-   - No direct register writes (e.g. `GPIOA->ODR` or `GPIOC->IDR`).
+| Hardware Component | STM32 GPIO Port & Pin | Nucleo Header Location | Configuration Mode |
+| :--- | :--- | :--- | :--- |
+| **Onboard User LED (LD2)** | `GPIOA`, `GPIO_PIN_5` | Internal | Push-Pull Output |
+| **Onboard User Button (B1)** | `GPIOC`, `GPIO_PIN_13` | Internal | Input with Pull-Up (Active LOW) |
+| **External LED 1** | `GPIOA`, `GPIO_PIN_6` | Arduino Header `D12` / Morpho `PA6` | Push-Pull Output |
+| **External LED 2** | `GPIOA`, `GPIO_PIN_7` | Arduino Header `D11` / Morpho `PA7` | Push-Pull Output |
 
-2. **Software Debouncing & State Persistence**:
-   - Uses a non-blocking 50ms software debounce algorithm using `millis()` / `HAL_GetTick()`.
-   - Detects the falling edge (button press) to toggle the LED state exactly once per press.
-   - LED state persists after button release.
+---
 
-## Explanation of Changes
-- **Debounce Logic**: Physical buttons suffer from mechanical contact bounce (10ms–30ms). A state timer (`last_debounce_time`) filters high-frequency noise before validating a genuine state change.
-- **Edge Detection**: Toggling is performed only when transitioning from `SET` to `RESET` (`button_state == GPIO_PIN_RESET`), ensuring release events do not re-trigger the LED.
+## 2. Task 2 Wiring Diagram
+
+Connect two external LEDs with current-limiting resistors (220Ω - 470Ω) to `PA6` and `PA7` on the Nucleo board:
+
+```
+                  STM32 Nucleo-F401RE Board
+             +---------------------------------+
+             |                                 |
+             |   [PA6 / D12] ----[ 220Ω ]--->|---(GND)
+             |                               Ext LED 1
+             |                                 |
+             |   [PA7 / D11] ----[ 220Ω ]--->|---(GND)
+             |                               Ext LED 2
+             |                                 |
+             |   [GND Pin]   ------------------+
+             +---------------------------------+
+```
+
+---
+
+## 3. Implementation Details & Driver APIs
+
+1. **Task 1: Button-Controlled LED**:
+   - Reads `PC13` using `HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)`.
+   - Filters mechanical contact bounce with a 50ms software debounce window.
+   - Detects the falling edge (button press) and toggles `PA5` via `HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5)`.
+   - LED state persists reliably after button release.
+
+2. **Task 2: Alternating External LED Blink**:
+   - Initialized with `PA6` set `HIGH` and `PA7` set `LOW`.
+   - Alternates state every 250ms (yielding a 500ms total period per LED) using `HAL_GPIO_TogglePin()`.
+   - Runs out-of-phase smoothly in the main loop without blocking Task 1 button events.
+
+3. **Driver Function Rule Compliance**:
+   - All GPIO operations use official driver functions (`HAL_GPIO_Init`, `HAL_GPIO_ReadPin`, `HAL_GPIO_WritePin`, `HAL_GPIO_TogglePin`).
+   - Zero direct register access (`GPIOA->ODR` or `GPIOC->IDR` avoided completely).
+
+---
+
+## 4. Video Demonstration & Verification
+
+- **Video Demo File**: [task1_demo.mp4](task1_demo.mp4)
+- **Observations**:
+  - Button presses on B1 cleanly toggle LD2 (PA5) on demand.
+  - External LEDs on PA6 and PA7 alternate cleanly out of phase every 250ms.
